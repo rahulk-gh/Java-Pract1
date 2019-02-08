@@ -6,12 +6,12 @@ import java.time.temporal.*;
 class Clock {
     public static void main(String[] args){
         //getting current time and date
-        LocalDateTime now = LocalDateTime.now();
-        int hour = now.get(ChronoField.HOUR_OF_DAY);
-        int minute = now.get(ChronoField.MINUTE_OF_HOUR);
-        int month = now.get(ChronoField.MONTH_OF_YEAR);
-        int day = now.get(ChronoField.DAY_OF_MONTH);
-        int year = now.get(ChronoField.YEAR);
+        LocalDateTime now1 = LocalDateTime.now();
+        int hour = now1.get(ChronoField.HOUR_OF_DAY);
+        int minute = now1.get(ChronoField.MINUTE_OF_HOUR);
+        int month = now1.get(ChronoField.MONTH_OF_YEAR);
+        int day = now1.get(ChronoField.DAY_OF_MONTH);
+        int year = now1.get(ChronoField.YEAR);
         
         //display greeting
         if(hour <12){
