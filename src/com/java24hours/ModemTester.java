@@ -13,8 +13,8 @@ public class ModemTester {
     public static void main(String[] args){
         CableModem surfboard = new CableModem();
         DslModem gateway = new DslModem();
-        surfboard.speed = 500000;
-        gateway.speed = 400000;
+        surfboard.setSpeed(500000);
+        gateway.setSpeed(400000);
         System.out.println("TRying the cablemodem:");
         surfboard.displaySpeed();
         surfboard.connect();

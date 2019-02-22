@@ -10,9 +10,23 @@ package com.java24hours;
  * @author rahulk-gh
  */
 public class Modem {
-    int speed;
+
+    /**
+     * @return the speed
+     */
+    public int getSpeed() {
+        return speed;
+    }
+
+    /**
+     * @param speed the speed to set
+     */
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    private int speed;
     
     public void displaySpeed(){
-        System.out.println("speed: "+ speed);
+        System.out.println("speed: "+ getSpeed());
     }
 }
