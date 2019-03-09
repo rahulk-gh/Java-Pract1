@@ -1,5 +1,6 @@
 /*
-Simple game for testing...
+Simple game for testing multiple interacting methods in a class
+Change up to ask for user input
 author rahulk-gh
 */
 package com.java24hours;
