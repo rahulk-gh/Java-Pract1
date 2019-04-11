@@ -41,9 +41,17 @@ public class Catalog {
             "programming");
             catalog[3] = new HomePage("Teggie G", "http://politicalwire.com", 
             "politics");
+            catalog[4] = new HomePage("Manton R", "http://manton.org");
             for (int i = 0; i < catalog.length; i++){
-                System.out.println(catalog[i].owner + ": "+ )
+                System.out.println(catalog[i].owner + ": "+ 
+                        catalog[i].address + " -- " + 
+                        catalog[i].category);
             }
+        } catch(MalformedURLException e){
+            System.out.println("error : "+ e.getMessage());
         }
+    }
+    public static void main(String[] args){
+        new Catalog();
     }
 }
